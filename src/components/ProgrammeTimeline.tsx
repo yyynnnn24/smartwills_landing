@@ -27,7 +27,7 @@ function ProgrammeEntry({ item, index }: { item: ProgrammeItem; index: number })
             className={`z-10 mt-1 h-3 w-3 rounded-full border-2 transition-all duration-300 ${
               item.isMilestone
                 ? 'border-gold-500 bg-gold-500 shadow-gold group-hover:scale-125'
-                : 'border-gold-500/40 bg-navy-950 group-hover:border-gold-500/70'
+                : 'border-gold-500/40 bg-emerald-950 group-hover:border-gold-500/70'
             }`}
           />
           {index < programmeData.length - 1 && (
@@ -41,7 +41,7 @@ function ProgrammeEntry({ item, index }: { item: ProgrammeItem; index: number })
             className={`rounded-xl p-4 transition-all duration-300 sm:p-5 ${
               item.isMilestone
                 ? 'glass-card border-gold-500/20 hover:border-gold-500/35 hover:bg-gold-500/8'
-                : 'border border-cream-50/5 bg-navy-850/40 hover:border-cream-50/10 hover:bg-navy-850/60'
+                : 'border border-cream-50/5 bg-emerald-850/40 hover:border-cream-50/10 hover:bg-emerald-850/60'
             }`}
           >
             <p
@@ -67,7 +67,7 @@ function ProgrammeEntry({ item, index }: { item: ProgrammeItem; index: number })
 
 export function ProgrammeTimeline() {
   return (
-    <section id="programme" className="relative w-full bg-navy-600 py-20 sm:py-28">
+    <section id="programme" className="relative w-full bg-emerald-600 py-20 sm:py-28">
       {/* Subtle background glow */}
       <div className="absolute left-1/2 top-0 h-[400px] w-[600px] -translate-x-1/2 rounded-full bg-gold-500/4 blur-[120px]" />
 

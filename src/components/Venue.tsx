@@ -4,7 +4,7 @@ import { venueMapUrl } from '@/data/eventData';
 
 export function Venue() {
   return (
-    <section className="relative w-full bg-navy-950 py-20 sm:py-28">
+    <section className="relative w-full bg-emerald-950 py-20 sm:py-28">
       <div className="relative mx-auto max-w-4xl px-6 sm:px-8">
         <Reveal className="mb-12 text-center">
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-500/80">
@@ -17,11 +17,11 @@ export function Venue() {
         </Reveal>
 
         <Reveal delay={100}>
-          <div className="overflow-hidden rounded-3xl border border-gold-500/15 bg-gradient-to-b from-navy-850/60 to-navy-950/60 shadow-navy">
+          <div className="overflow-hidden rounded-3xl border border-gold-500/15 bg-gradient-to-b from-emerald-850/60 to-emerald-950/60 shadow-emerald">
             {/* Map-style visual */}
             <div className="relative h-48 overflow-hidden sm:h-56">
               {/* Abstract map texture */}
-              <div className="absolute inset-0 bg-gradient-to-br from-navy-850 via-navy-700 to-navy-950" />
+              <div className="absolute inset-0 bg-gradient-to-br from-emerald-850 via-emerald-700 to-emerald-950" />
               <div
                 className="absolute inset-0 opacity-20"
                 style={{
@@ -39,7 +39,7 @@ export function Venue() {
               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <div className="relative flex flex-col items-center">
                   <div className="absolute -inset-4 animate-pulse-soft rounded-full bg-gold-500/20 blur-md" />
-                  <div className="relative flex h-14 w-14 items-center justify-center rounded-full border-2 border-gold-500 bg-navy-950 shadow-gold">
+                  <div className="relative flex h-14 w-14 items-center justify-center rounded-full border-2 border-gold-500 bg-emerald-950 shadow-gold">
                     <MapPin className="h-6 w-6 text-gold-500" strokeWidth={1.5} />
                   </div>
                   <div className="mt-1 h-2 w-1 rounded-full bg-gold-500/50" />

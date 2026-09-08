@@ -7,14 +7,14 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-[100svh] w-full overflow-hidden bg-navy-950">
+    <section className="relative min-h-[100svh] w-full overflow-hidden bg-emerald-950">
       {/* Background gradient layers */}
-      <div className="absolute inset-0 bg-gradient-to-b from-navy-950 via-navy-600 to-navy-950" />
+      <div className="absolute inset-0 bg-gradient-to-b from-emerald-950 via-emerald-600 to-emerald-950" />
 
       {/* Decorative radial glow */}
       <div className="absolute inset-0 opacity-70">
         <div className="absolute left-1/2 top-[10%] h-[640px] w-[640px] -translate-x-1/2 rounded-full bg-gold-500/8 blur-[130px]" />
-        <div className="absolute left-1/4 top-1/3 h-[420px] w-[420px] rounded-full bg-navy-400/14 blur-[110px]" />
+        <div className="absolute left-1/4 top-1/3 h-[420px] w-[420px] rounded-full bg-emerald-400/14 blur-[110px]" />
         <div className="absolute right-1/4 bottom-1/4 h-[320px] w-[320px] rounded-full bg-gold-400/4 blur-[90px]" />
       </div>
 
@@ -78,11 +78,11 @@ export function Hero() {
           className="mb-10 flex flex-col items-center gap-3 animate-fade-up opacity-0 sm:flex-row sm:gap-4"
           style={{ animationDelay: '1.0s' }}
         >
-          <div className="inline-flex items-center gap-2.5 rounded-full border border-gold-500/16 bg-navy-850/70 px-5 py-2.5 backdrop-blur-sm">
+          <div className="inline-flex items-center gap-2.5 rounded-full border border-gold-500/16 bg-emerald-850/70 px-5 py-2.5 backdrop-blur-sm">
             <Calendar className="h-4 w-4 text-gold-500" strokeWidth={1.5} />
             <span className="text-sm font-medium text-cream-50/90">12 September 2026</span>
           </div>
-          <div className="inline-flex items-center gap-2.5 rounded-full border border-gold-500/16 bg-navy-850/70 px-5 py-2.5 backdrop-blur-sm">
+          <div className="inline-flex items-center gap-2.5 rounded-full border border-gold-500/16 bg-emerald-850/70 px-5 py-2.5 backdrop-blur-sm">
             <MapPin className="h-4 w-4 text-gold-500" strokeWidth={1.5} />
             <span className="text-sm font-medium text-cream-50/90">Tropicana Golf &amp; Country Resort, PJ</span>
           </div>

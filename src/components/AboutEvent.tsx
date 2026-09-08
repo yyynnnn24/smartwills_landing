@@ -21,9 +21,9 @@ export function AboutEvent() {
   ];
 
   return (
-    <section className="relative w-full bg-navy-950 py-20 sm:py-28">
+    <section className="relative w-full bg-emerald-950 py-20 sm:py-28">
       {/* Subtle top gradient */}
-      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-navy-600 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-emerald-600 to-transparent" />
 
       <div className="relative mx-auto max-w-4xl px-6 sm:px-8">
         <Reveal className="mb-12 text-center">

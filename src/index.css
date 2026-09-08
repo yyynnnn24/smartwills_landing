@@ -62,7 +62,7 @@ body {
     -webkit-text-fill-color: transparent;
   }
 
-  .text-gradient-navy-gold {
+  .text-gradient-cream-gold {
     background: linear-gradient(135deg, #fdf8ee 0%, #f8e8c4 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -91,7 +91,7 @@ body {
     box-shadow: 0 10px 28px -10px rgba(191, 128, 31, 0.38);
   }
 
-  .shadow-navy {
+  .shadow-emerald {
     box-shadow: 0 10px 34px -12px rgba(0, 24, 22, 0.7);
   }
 }

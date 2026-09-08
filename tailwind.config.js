@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        navy: {
+        emerald: {
           50: '#e9f1ed',
           100: '#cbded5',
           200: '#a2c2b5',

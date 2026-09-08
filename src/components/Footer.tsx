@@ -2,7 +2,7 @@ import { Shield } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="relative w-full bg-navy-950 border-t border-gold-500/10 py-12">
+    <footer className="relative w-full bg-emerald-950 border-t border-gold-500/10 py-12">
       <div className="mx-auto max-w-4xl px-6 sm:px-8">
         <div className="flex flex-col items-center gap-6 text-center">
           {/* Logo mark */}
