@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background-color: #0a1428;
+  color: #fdf8ee;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #e0b53a;
+  color: #0a1428;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a1428;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2c4d88;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4d6ca9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #f4e4ad 0%, #e0b53a 50%, #c99a2a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-navy-gold {
+    background: linear-gradient(135deg, #fdf8ee 0%, #f4e4ad 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(224, 181, 58, 0.12);
+  }
+
+  .glass-card-dark {
+    background: rgba(10, 20, 40, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(224, 181, 58, 0.15);
+  }
+
+  .hero-overlay {
+    background: linear-gradient(180deg, rgba(10, 20, 40, 0.75) 0%, rgba(10, 20, 40, 0.85) 50%, rgba(10, 20, 40, 0.95) 100%);
+  }
+
+  .shadow-gold {
+    box-shadow: 0 8px 32px -8px rgba(224, 181, 58, 0.3);
+  }
+
+  .shadow-navy {
+    box-shadow: 0 8px 32px -8px rgba(10, 20, 40, 0.5);
+  }
+}
