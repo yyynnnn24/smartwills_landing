@@ -12,7 +12,7 @@ function SpeakerCard({ speaker, index }: { speaker: Speaker; index: number }) {
         <div className="relative mx-auto mb-5 flex h-20 w-20 items-center justify-center sm:h-24 sm:w-24">
           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold-500/20 via-emerald-500/10 to-gold-500/5 transition-all duration-500 group-hover:from-gold-500/30 group-hover:to-gold-500/10" />
           <div className="absolute inset-[2px] rounded-full bg-cream-100/75" />
-          <span className="relative font-serif text-2xl font-medium text-gradient-gold sm:text-3xl">
+          <span className="relative font-serif text-3xl font-medium text-gradient-gold sm:text-4xl">
             {speaker.initials}
           </span>
         </div>

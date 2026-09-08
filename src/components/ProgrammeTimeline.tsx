@@ -18,7 +18,7 @@ function ProgrammeEntry({
             className={`rounded-lg px-2.5 py-1 text-right transition-colors duration-300 ${
               item.isMilestone
                 ? 'bg-[#BF801F]/10 text-[#C9953B]'
-                : 'text-[#E5E7EB]/60 group-hover:text-[#E5E7EB]/90'
+                : 'text-[#E5E7EB]/100 group-hover:text-[#E5E7EB]/90'
             }`}
           >
             <span className="font-sans text-xs font-semibold tabular-nums sm:text-sm">
@@ -33,7 +33,7 @@ function ProgrammeEntry({
             className={`z-10 mt-1 h-3 w-3 rounded-full border-2 transition-all duration-300 ${
               item.isMilestone
                 ? 'border-[#BF801F] bg-[#BF801F] shadow-[0_0_14px_rgba(191,128,31,0.35)] group-hover:scale-125'
-                : 'border-[#BF801F]/40 bg-[#023936] group-hover:border-[#BF801F]/70'
+                : 'border-[#BF801F]/60 bg-[#023936] group-hover:border-[#BF801F]/70'
             }`}
           />
 
@@ -55,7 +55,7 @@ function ProgrammeEntry({
               className={`text-sm leading-relaxed sm:text-base ${
                 item.isMilestone
                   ? 'font-semibold text-[#E5E7EB]'
-                  : 'font-medium text-[#E5E7EB]/80'
+                  : 'font-medium text-[#E5E7EB]/100'
               }`}
             >
               {item.title}
@@ -118,9 +118,9 @@ export function ProgrammeTimeline() {
 
           <div className="mx-auto mt-6 h-px w-16 bg-gradient-to-r from-transparent via-[#BF801F]/50 to-transparent" />
 
-          <p className="mt-4 inline-flex items-center gap-2 text-sm text-[#E5E7EB]/50">
+          <p className="mt-4 inline-flex items-center gap-2 text-sm text-[#E5E7EB]/100">
             <Clock
-              className="h-4 w-4 text-[#BF801F]/60"
+              className="h-4 w-4 text-[#BF801F]/100"
               strokeWidth={1.5}
             />
             Saturday, 12 September 2026
