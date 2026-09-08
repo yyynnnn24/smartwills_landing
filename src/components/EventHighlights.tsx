@@ -25,7 +25,7 @@ function HighlightCard({ highlight }: { highlight: Highlight }) {
           </div>
 
           {/* Title */}
-          <h3 className="font-serif text-2xl font-medium leading-tight text-[#F8F3E8] transition-colors duration-300 group-hover:text-[#D9A441] sm:text-3xl">
+          <h3 className="font-serif text-2xl font-bold leading-tight text-[#E5E7EB] transition-colors duration-300 group-hover:text-[#D9A441] sm:text-3xl">
             {highlight.title}
           </h3>
         </div>
@@ -72,7 +72,7 @@ export function EventHighlights() {
             Key Moments
           </span>
 
-          <h2 className="mt-4 font-serif text-3xl font-medium text-[#F8F3E8] sm:text-4xl md:text-5xl">
+          <h2 className="mt-4 font-serif text-3xl font-bold text-[#E5E7EB] sm:text-4xl md:text-5xl">
             Event Highlights
           </h2>
 

@@ -16,7 +16,7 @@ export function Footer() {
               />
             </div>
 
-            <span className="font-serif text-lg font-medium text-cream-50">
+            <span className="font-serif text-xl font-medium text-cream-50">
               SmartWills{' '}
               <span className="text-gradient-gold">
                 WasiatKu

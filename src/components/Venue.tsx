@@ -10,7 +10,7 @@ export function Venue() {
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-500/80">
             Location
           </span>
-          <h2 className="mt-4 font-serif text-3xl font-medium text-cream-50 sm:text-4xl md:text-5xl">
+          <h2 className="mt-4 font-serif text-3xl font-bold text-[#F8F3E8] sm:text-4xl md:text-5xl">
             Venue
           </h2>
           <div className="mx-auto mt-6 h-px w-16 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent" />
@@ -48,18 +48,18 @@ export function Venue() {
             </div>
 
             {/* Venue details */}
-            <div className="flex flex-col items-center gap-6 p-6 text-center sm:p-8 md:flex-row md:items-start md:text-left">
+            <div className="flex flex-col items-center gap-6 bg-[#fdf8ee] p-6 text-center sm:p-8 md:flex-row md:items-start md:text-left">
               <div className="flex-1">
                 <div className="mb-3 flex items-center justify-center gap-2 md:justify-start">
                   <Calendar className="h-4 w-4 text-gold-500" strokeWidth={1.5} />
-                  <span className="text-xs font-medium uppercase tracking-wider text-cream-50/50">
+                  <span className="text-xs font-medium uppercase tracking-wider text-[#C9953B]">
                     12 September 2026
                   </span>
                 </div>
-                <h3 className="font-serif text-2xl font-medium text-cream-50 sm:text-3xl">
+                <h3 className="font-serif text-2xl font-medium text-[#C9953B] sm:text-3xl">
                   Tropicana Golf &amp; Country Resort
                 </h3>
-                <p className="mt-2 flex items-center justify-center gap-1.5 text-sm text-cream-50/60 md:justify-start">
+                <p className="mt-2 flex items-center justify-center gap-1.5 text-sm text-[#C9953B] md:justify-start">
                   <MapPin className="h-4 w-4 text-gold-500/60" strokeWidth={1.5} />
                   Petaling Jaya, Selangor
                 </p>

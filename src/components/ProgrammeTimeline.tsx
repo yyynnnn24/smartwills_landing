@@ -17,8 +17,8 @@ function ProgrammeEntry({
           <div
             className={`rounded-lg px-2.5 py-1 text-right transition-colors duration-300 ${
               item.isMilestone
-                ? 'bg-[#BF801F]/10 text-[#BF801F]'
-                : 'text-[#F8F3E8]/60 group-hover:text-[#F8F3E8]/90'
+                ? 'bg-[#BF801F]/10 text-[#C9953B]'
+                : 'text-[#E5E7EB]/60 group-hover:text-[#E5E7EB]/90'
             }`}
           >
             <span className="font-sans text-xs font-semibold tabular-nums sm:text-sm">
@@ -54,8 +54,8 @@ function ProgrammeEntry({
             <p
               className={`text-sm leading-relaxed sm:text-base ${
                 item.isMilestone
-                  ? 'font-semibold text-[#F8F3E8]'
-                  : 'font-medium text-[#F8F3E8]/80'
+                  ? 'font-semibold text-[#E5E7EB]'
+                  : 'font-medium text-[#E5E7EB]/80'
               }`}
             >
               {item.title}
@@ -112,13 +112,13 @@ export function ProgrammeTimeline() {
             Schedule of Events
           </span>
 
-          <h2 className="mt-4 font-serif text-3xl font-medium text-[#F8F3E8] sm:text-4xl md:text-5xl">
+          <h2 className="mt-4 font-serif text-3xl font-bold text-[#E5E7EB] sm:text-4xl md:text-5xl">
             Event Programme
           </h2>
 
           <div className="mx-auto mt-6 h-px w-16 bg-gradient-to-r from-transparent via-[#BF801F]/50 to-transparent" />
 
-          <p className="mt-4 inline-flex items-center gap-2 text-sm text-[#F8F3E8]/50">
+          <p className="mt-4 inline-flex items-center gap-2 text-sm text-[#E5E7EB]/50">
             <Clock
               className="h-4 w-4 text-[#BF801F]/60"
               strokeWidth={1.5}
