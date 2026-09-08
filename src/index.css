@@ -9,7 +9,10 @@ html {
 
 body {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-  background-color: #0a1428;
+  background:
+    radial-gradient(circle at 15% 12%, rgba(16, 72, 54, 0.28), transparent 30%),
+    radial-gradient(circle at 85% 78%, rgba(191, 128, 31, 0.05), transparent 24%),
+    #023936;
   color: #fdf8ee;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,8 +20,8 @@ body {
 }
 
 ::selection {
-  background-color: #e0b53a;
-  color: #0a1428;
+  background-color: #bf801f;
+  color: #023936;
 }
 
 ::-webkit-scrollbar {
@@ -26,16 +29,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a1428;
+  background: #023936;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2c4d88;
+  background: #104836;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #4d6ca9;
+  background: #286957;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -53,42 +56,42 @@ body {
 
 @layer utilities {
   .text-gradient-gold {
-    background: linear-gradient(135deg, #f4e4ad 0%, #e0b53a 50%, #c99a2a 100%);
+    background: linear-gradient(135deg, #f8e8c4 0%, #bf801f 52%, #a96d18 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .text-gradient-navy-gold {
-    background: linear-gradient(135deg, #fdf8ee 0%, #f4e4ad 100%);
+    background: linear-gradient(135deg, #fdf8ee 0%, #f8e8c4 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .glass-card {
-    background: rgba(255, 255, 255, 0.03);
+    background: linear-gradient(145deg, rgba(16, 72, 54, 0.48), rgba(2, 57, 54, 0.34));
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(224, 181, 58, 0.12);
+    border: 1px solid rgba(191, 128, 31, 0.16);
   }
 
   .glass-card-dark {
-    background: rgba(10, 20, 40, 0.6);
+    background: rgba(2, 57, 54, 0.66);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(224, 181, 58, 0.15);
+    border: 1px solid rgba(191, 128, 31, 0.18);
   }
 
   .hero-overlay {
-    background: linear-gradient(180deg, rgba(10, 20, 40, 0.75) 0%, rgba(10, 20, 40, 0.85) 50%, rgba(10, 20, 40, 0.95) 100%);
+    background: linear-gradient(180deg, rgba(2, 57, 54, 0.75) 0%, rgba(16, 72, 54, 0.86) 50%, rgba(1, 42, 40, 0.96) 100%);
   }
 
   .shadow-gold {
-    box-shadow: 0 8px 32px -8px rgba(224, 181, 58, 0.3);
+    box-shadow: 0 10px 28px -10px rgba(191, 128, 31, 0.38);
   }
 
   .shadow-navy {
-    box-shadow: 0 8px 32px -8px rgba(10, 20, 40, 0.5);
+    box-shadow: 0 10px 34px -12px rgba(0, 24, 22, 0.7);
   }
 }

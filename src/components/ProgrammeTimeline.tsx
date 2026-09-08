@@ -11,7 +11,7 @@ function ProgrammeEntry({ item, index }: { item: ProgrammeItem; index: number })
           <div
             className={`rounded-lg px-2.5 py-1 text-right transition-colors duration-300 ${
               item.isMilestone
-                ? 'bg-gold-400/10 text-gold-300'
+                ? 'bg-gold-500/10 text-gold-300'
                 : 'text-cream-50/60 group-hover:text-cream-50/90'
             }`}
           >
@@ -26,12 +26,12 @@ function ProgrammeEntry({ item, index }: { item: ProgrammeItem; index: number })
           <div
             className={`z-10 mt-1 h-3 w-3 rounded-full border-2 transition-all duration-300 ${
               item.isMilestone
-                ? 'border-gold-400 bg-gold-400 shadow-gold group-hover:scale-125'
-                : 'border-gold-400/40 bg-navy-950 group-hover:border-gold-400/70'
+                ? 'border-gold-500 bg-gold-500 shadow-gold group-hover:scale-125'
+                : 'border-gold-500/40 bg-navy-950 group-hover:border-gold-500/70'
             }`}
           />
           {index < programmeData.length - 1 && (
-            <div className="mt-1 w-px flex-1 bg-gradient-to-b from-gold-400/20 to-gold-400/5" />
+            <div className="mt-1 w-px flex-1 bg-gradient-to-b from-gold-500/20 to-gold-500/5" />
           )}
         </div>
 
@@ -40,8 +40,8 @@ function ProgrammeEntry({ item, index }: { item: ProgrammeItem; index: number })
           <div
             className={`rounded-xl p-4 transition-all duration-300 sm:p-5 ${
               item.isMilestone
-                ? 'glass-card border-gold-400/20 hover:border-gold-400/35 hover:bg-gold-400/8'
-                : 'border border-cream-50/5 bg-navy-800/30 hover:border-cream-50/10 hover:bg-navy-800/50'
+                ? 'glass-card border-gold-500/20 hover:border-gold-500/35 hover:bg-gold-500/8'
+                : 'border border-cream-50/5 bg-navy-850/40 hover:border-cream-50/10 hover:bg-navy-850/60'
             }`}
           >
             <p
@@ -54,7 +54,7 @@ function ProgrammeEntry({ item, index }: { item: ProgrammeItem; index: number })
               {item.title}
             </p>
             {item.isMilestone && (
-              <span className="mt-2 inline-block rounded-full bg-gold-400/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-gold-300">
+              <span className="mt-2 inline-block rounded-full bg-gold-500/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-gold-300">
                 Key Ceremony
               </span>
             )}
@@ -67,21 +67,21 @@ function ProgrammeEntry({ item, index }: { item: ProgrammeItem; index: number })
 
 export function ProgrammeTimeline() {
   return (
-    <section id="programme" className="relative w-full bg-navy-900 py-20 sm:py-28">
+    <section id="programme" className="relative w-full bg-navy-600 py-20 sm:py-28">
       {/* Subtle background glow */}
-      <div className="absolute left-1/2 top-0 h-[400px] w-[600px] -translate-x-1/2 rounded-full bg-gold-500/5 blur-[120px]" />
+      <div className="absolute left-1/2 top-0 h-[400px] w-[600px] -translate-x-1/2 rounded-full bg-gold-500/4 blur-[120px]" />
 
       <div className="relative mx-auto max-w-3xl px-6 sm:px-8">
         <Reveal className="mb-12 text-center">
-          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400/80">
+          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-500/80">
             Schedule of Events
           </span>
           <h2 className="mt-4 font-serif text-3xl font-medium text-cream-50 sm:text-4xl md:text-5xl">
             Event Programme
           </h2>
-          <div className="mx-auto mt-6 h-px w-16 bg-gradient-to-r from-transparent via-gold-400/50 to-transparent" />
+          <div className="mx-auto mt-6 h-px w-16 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent" />
           <p className="mt-4 inline-flex items-center gap-2 text-sm text-cream-50/50">
-            <Clock className="h-4 w-4 text-gold-400/60" strokeWidth={1.5} />
+            <Clock className="h-4 w-4 text-gold-500/60" strokeWidth={1.5} />
             Saturday, 12 September 2026
           </p>
         </Reveal>

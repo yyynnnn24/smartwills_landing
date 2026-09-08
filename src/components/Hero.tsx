@@ -9,13 +9,13 @@ export function Hero() {
   return (
     <section className="relative min-h-[100svh] w-full overflow-hidden bg-navy-950">
       {/* Background gradient layers */}
-      <div className="absolute inset-0 bg-gradient-to-b from-navy-950 via-navy-900 to-navy-950" />
+      <div className="absolute inset-0 bg-gradient-to-b from-navy-950 via-navy-600 to-navy-950" />
 
       {/* Decorative radial glow */}
-      <div className="absolute inset-0 opacity-60">
-        <div className="absolute left-1/2 top-0 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-gold-500/10 blur-[120px]" />
-        <div className="absolute left-1/4 top-1/3 h-[400px] w-[400px] rounded-full bg-navy-500/20 blur-[100px]" />
-        <div className="absolute right-1/4 bottom-1/4 h-[300px] w-[300px] rounded-full bg-gold-400/5 blur-[80px]" />
+      <div className="absolute inset-0 opacity-70">
+        <div className="absolute left-1/2 top-[10%] h-[640px] w-[640px] -translate-x-1/2 rounded-full bg-gold-500/8 blur-[130px]" />
+        <div className="absolute left-1/4 top-1/3 h-[420px] w-[420px] rounded-full bg-navy-400/14 blur-[110px]" />
+        <div className="absolute right-1/4 bottom-1/4 h-[320px] w-[320px] rounded-full bg-gold-400/4 blur-[90px]" />
       </div>
 
       {/* Grid texture */}
@@ -78,12 +78,12 @@ export function Hero() {
           className="mb-10 flex flex-col items-center gap-3 animate-fade-up opacity-0 sm:flex-row sm:gap-4"
           style={{ animationDelay: '1.0s' }}
         >
-          <div className="inline-flex items-center gap-2.5 rounded-full border border-gold-400/15 bg-navy-800/50 px-5 py-2.5 backdrop-blur-sm">
-            <Calendar className="h-4 w-4 text-gold-400" strokeWidth={1.5} />
+          <div className="inline-flex items-center gap-2.5 rounded-full border border-gold-500/16 bg-navy-850/70 px-5 py-2.5 backdrop-blur-sm">
+            <Calendar className="h-4 w-4 text-gold-500" strokeWidth={1.5} />
             <span className="text-sm font-medium text-cream-50/90">12 September 2026</span>
           </div>
-          <div className="inline-flex items-center gap-2.5 rounded-full border border-gold-400/15 bg-navy-800/50 px-5 py-2.5 backdrop-blur-sm">
-            <MapPin className="h-4 w-4 text-gold-400" strokeWidth={1.5} />
+          <div className="inline-flex items-center gap-2.5 rounded-full border border-gold-500/16 bg-navy-850/70 px-5 py-2.5 backdrop-blur-sm">
+            <MapPin className="h-4 w-4 text-gold-500" strokeWidth={1.5} />
             <span className="text-sm font-medium text-cream-50/90">Tropicana Golf &amp; Country Resort, PJ</span>
           </div>
         </div>
@@ -95,7 +95,7 @@ export function Hero() {
         >
           <button
             onClick={scrollToProgramme}
-            className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-gold-300 to-gold-500 px-7 py-3.5 text-sm font-semibold text-navy-950 shadow-gold transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:shadow-gold-500/30 active:scale-[0.98]"
+            className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-gold-500 to-gold-600 px-7 py-3.5 text-sm font-semibold text-cream-50 shadow-gold transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:shadow-gold-500/25 active:scale-[0.98]"
           >
             View Programme
             <ArrowDown className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" strokeWidth={2} />
@@ -104,7 +104,7 @@ export function Hero() {
             href={venueMapUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-full border border-cream-50/20 bg-cream-50/5 px-7 py-3.5 text-sm font-semibold text-cream-50 backdrop-blur-sm transition-all duration-300 hover:border-gold-400/40 hover:bg-gold-400/5 hover:text-gold-200 active:scale-[0.98]"
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-gold-500/25 bg-gold-500/5 px-7 py-3.5 text-sm font-semibold text-cream-50 backdrop-blur-sm transition-all duration-300 hover:border-gold-500/50 hover:bg-gold-500/10 hover:text-gold-200 active:scale-[0.98]"
           >
             <Navigation className="h-4 w-4" strokeWidth={2} />
             Get Directions
@@ -117,7 +117,7 @@ export function Hero() {
         <div className="flex flex-col items-center gap-2">
           <span className="text-[10px] uppercase tracking-[0.3em] text-cream-50/40">Scroll</span>
           <div className="flex h-9 w-5 justify-center rounded-full border border-cream-50/20 pt-1.5">
-            <div className="h-1.5 w-0.5 rounded-full bg-gold-400/60 animate-bounce" />
+            <div className="h-1.5 w-0.5 rounded-full bg-gold-500/60 animate-bounce" />
           </div>
         </div>
       </div>
