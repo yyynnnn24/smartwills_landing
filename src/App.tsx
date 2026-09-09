@@ -1,6 +1,5 @@
 import { Hero } from '@/components/Hero';
 import { ProgrammeTimeline } from '@/components/ProgrammeTimeline';
-import { Speakers } from '@/components/Speakers';
 import { EventHighlights } from '@/components/EventHighlights';
 import { Venue } from '@/components/Venue';
 import { Footer } from '@/components/Footer';
@@ -11,7 +10,6 @@ function App() {
       <Hero />
       <EventHighlights />
       <ProgrammeTimeline />
-      <Speakers />
       <Venue />
       <Footer />
     </div>
