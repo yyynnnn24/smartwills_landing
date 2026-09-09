@@ -17,9 +17,9 @@ function HighlightCard({ highlight, index }: { highlight: Highlight; index: numb
       <div className="group relative h-full overflow-hidden rounded-2xl border border-[#D9A441]/20 bg-gradient-to-br from-[#104836] via-[#023936] to-[#003C32] p-5 transition-all duration-300 hover:border-[#D9A441]/40 hover:from-[#185A47] hover:via-[#104836] hover:to-[#023936] sm:p-6">
         <div className="relative flex flex-col items-center justify-center text-center">
           {/* Icon */}
-          <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl border border-[#D9A441]/25 bg-[#D9A441]/10 transition-all duration-300 group-hover:scale-110 group-hover:border-[#D9A441]/50 group-hover:bg-[#D9A441]/15 group-hover:shadow-[0_0_20px_rgba(217,164,65,0.18)]">
+          <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl border border-[#F8F3E8]/25 bg-[#F8F3E8] transition-all duration-300 group-hover:scale-110 group-hover:border-[#D9A441]/50 group-hover:bg-[#D9A441]/15 group-hover:shadow-[0_0_20px_rgba(217,164,65,0.18)]">
             <Icon
-              className="h-5 w-5 text-[#D9A441]"
+              className="h-5 w-5 text-[#104836]"
               strokeWidth={1.5}
             />
           </div>
@@ -40,29 +40,23 @@ function HighlightCard({ highlight, index }: { highlight: Highlight; index: numb
 export function EventHighlights() {
   return (
     <section
-      className="relative w-full overflow-hidden bg-[#023936] py-20 sm:py-28"
+      className="relative w-full overflow-hidden bg-[#F8F3E8] py-20 sm:py-28"
     >
-      {/* Background atmosphere */}
+      {/* Decorative radial glow */}
       <div className="pointer-events-none absolute inset-0">
-        {/* Green glow */}
-        <div className="absolute left-1/2 top-[-100px] h-[450px] w-[700px] -translate-x-1/2 rounded-full bg-[#104836]/35 blur-[130px]" />
-
-        {/* Gold glow */}
-        <div className="absolute right-[-120px] top-1/2 h-[350px] w-[350px] rounded-full bg-[#D9A441]/[0.04] blur-[120px]" />
-
-        {/* Left green glow */}
-        <div className="absolute bottom-[-100px] left-[-150px] h-[350px] w-[350px] rounded-full bg-[#104836]/30 blur-[120px]" />
-
-        {/* Subtle grid */}
-        <div
-          className="absolute inset-0 opacity-[0.02]"
-          style={{
-            backgroundImage:
-              'linear-gradient(rgba(248,243,232,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(248,243,232,0.5) 1px, transparent 1px)',
-            backgroundSize: '50px 50px',
-          }}
-        />
+        <div className="absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-[#D9A441]/[0.035] blur-[140px]" />
       </div>
+
+      {/* Grid texture */}
+      <div
+        className="absolute inset-0 opacity-[0.02]"
+        style={{
+          backgroundImage:
+            'linear-gradient(rgba(248,243,232,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(248,243,232,0.5) 1px, transparent 1px)',
+          backgroundSize: '40px 40px',
+        }}
+      />
+
 
       <div className="relative mx-auto max-w-3xl px-6 sm:px-8">
 
@@ -72,7 +66,7 @@ export function EventHighlights() {
             Key Moments
           </span>
 
-          <h2 className="mt-4 font-serif text-3xl font-bold text-[#F8F3E8] sm:text-4xl md:text-5xl">
+          <h2 className="mt-4 font-serif text-3xl font-bold text-[#003C32] sm:text-4xl md:text-5xl">
             Event Highlights
           </h2>
 

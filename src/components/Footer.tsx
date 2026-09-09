@@ -27,11 +27,6 @@ export function Footer() {
           {/* Divider */}
           <div className="h-px w-32 bg-gradient-to-r from-transparent via-[#D9A441]/40 to-transparent" />
 
-          {/* Event tagline */}
-          <p className="text-sm text-[#F8F3E8]/50">
-            Official Launch &bull; 12 September 2026
-          </p>
-
           {/* Copyright */}
           <p className="text-xs text-[#F8F3E8]/30">
             &copy; 2026 SmartWills WasiatKu. All rights reserved.
