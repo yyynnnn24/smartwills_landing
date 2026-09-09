@@ -79,27 +79,28 @@ export function Hero() {
         />
 
         {/* Subheading */}
-        <p
-          className="mb-8 max-w-2xl animate-fade-up text-base font-light leading-relaxed text-[#003C32]/80 opacity-0 sm:text-lg md:text-xl"
+        <div
+          className="mb-12 flex flex-col items-center animate-fade-up opacity-0"
           style={{ animationDelay: '0.8s' }}
         >
-          Memorandum of Understanding (MoU)
-          <br />
-          Signing Ceremony
-          <br />
-          With
-          <br />
-          <span className="font-medium text-[#003C32]">
-            Palladium Trustee Berhad
-          </span>
-        </p>
+          <p className="max-w-2xl text-base font-light leading-relaxed text-[#003C32]/80 sm:text-lg md:text-xl">
+            Memorandum of Understanding (MoU)
+            <br />
+            Signing Ceremony
+            <br />
+            With
+            <br />
+            <span className="font-medium text-[#003C32]">
+              Palladium Trustee Berhad
+            </span>
+          </p>
 
-        <img 
-          src={logo2}
-          alt="Palladium Trustee Berhad Logo"
-          className=" mb-12 h-[50px] w-auto object-contain sm:h-[100px]"
-        />
-
+          <img
+            src={logo2}
+            alt="Palladium Trustee Berhad Logo"
+            className="mt-1 h-[50px] w-auto object-contain sm:h-[100px]"
+          />
+        </div>
 
         {/* Event info pills */}
         <div
@@ -154,7 +155,7 @@ export function Hero() {
           </a>
         </div>
       </div>
-
+        
     </section>
   );
 }
