@@ -51,7 +51,7 @@ export function Hero() {
           />
 
           {/* Title */}
-          <h1 className="ml-[-8px] text-left font-serif text-4xl font-semibold leading-[1.05] text-[#003C32] sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="ml-[-16px] text-left font-serif text-4xl font-semibold leading-[1.05] text-[#003C32] sm:text-5xl md:text-6xl lg:text-7xl">
             SMARTWILLS
             <br />
             <span className="text-gradient-gold">WASIATKU</span>
