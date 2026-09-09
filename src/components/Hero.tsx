@@ -47,11 +47,11 @@ export function Hero() {
           <img
             src={logo}
             alt="SmartWills WasiatKu Logo"
-            className="h-[100px] w-[100px] translate-x-4 translate-y-2 rounded-xl object-contain sm:h-[115px] sm:w-[115px]"
+            className="h-[100px] w-[100px] translate-x-3 translate-y-2 rounded-xl object-contain sm:h-[115px] sm:w-[115px]"
           />
 
           {/* Title */}
-          <h1 className="text-left font-serif text-4xl font-semibold leading-[1.05] text-[#003C32] sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="ml-[-8px] text-left font-serif text-4xl font-semibold leading-[1.05] text-[#003C32] sm:text-5xl md:text-6xl lg:text-7xl">
             SMARTWILLS
             <br />
             <span className="text-gradient-gold">WASIATKU</span>
