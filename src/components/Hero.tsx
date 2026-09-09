@@ -37,6 +37,7 @@ export function Hero() {
 
             {/* Content */}
       <div className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-6 py-20 text-center sm:px-8">
+        <div className="mb-7 flex w-full justify-center">
 
         {/* Logo + Main Title */}
         <div
@@ -56,6 +57,7 @@ export function Hero() {
             <br />
             <span className="text-gradient-gold">WASIATKU</span>
           </h1>
+        </div>
         </div>
 
         {/* Official Launch */}
