@@ -1,6 +1,7 @@
 import { Calendar, MapPin, ArrowDown, Navigation } from 'lucide-react';
 import { venueMapUrl } from '@/data/eventData';
 import logo from '@/assets/logo.png';
+import logo2 from '@/assets/logo2.png';
 
 export function Hero() {
   const scrollToProgramme = () => {
@@ -85,7 +86,20 @@ export function Hero() {
           Memorandum of Understanding (MoU)
           <br />
           Signing Ceremony
+          <br />
+          With
+          <br />
+          <span className="font-medium text-[#003C32]">
+            Palladium Trustee Berhad
+          </span>
         </p>
+
+        <img 
+          src={logo2}
+          alt="Palladium Trustee Berhad Logo"
+          className=" mb-12 h-[50px] w-auto object-contain sm:h-[100px]"
+        />
+
 
         {/* Event info pills */}
         <div
