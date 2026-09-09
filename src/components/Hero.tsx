@@ -40,14 +40,14 @@ export function Hero() {
 
         {/* Logo + Main Title */}
         <div
-          className="mb-7 flex items-center justify-center gap-4 animate-fade-up opacity-0 sm:gap-4"
+          className="mb-7 flex items-center justify-center gap-4 animate-fade-up opacity-0 "
           style={{ animationDelay: '0.4s' }}
         >
           {/* Logo */}
           <img
             src={logo}
             alt="SmartWills WasiatKu Logo"
-            className="h-[100px] w-[100px] translate-y-2 rounded-xl object-contain sm:h-[115px] sm:w-[115px]"
+            className="h-[100px] w-[100px] translate-x-4 translate-y-2 rounded-xl object-contain sm:h-[115px] sm:w-[115px]"
           />
 
           {/* Title */}
