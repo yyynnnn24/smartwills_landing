@@ -9,19 +9,16 @@ html {
 
 body {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-  background:
-    radial-gradient(circle at 15% 12%, rgba(16, 72, 54, 0.28), transparent 30%),
-    radial-gradient(circle at 85% 78%, rgba(191, 128, 31, 0.05), transparent 24%),
-    #023936;
-  color: #fdf8ee;
+  background: #003C32;
+  color: #F8F3E8;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
 ::selection {
-  background-color: #bf801f;
-  color: #023936;
+  background-color: #BF801F;
+  color: #003C32;
 }
 
 ::-webkit-scrollbar {
@@ -29,7 +26,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #023936;
+  background: #003C32;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -38,7 +35,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #286957;
+  background: #BF801F;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -56,14 +53,14 @@ body {
 
 @layer utilities {
   .text-gradient-gold {
-    background: linear-gradient(135deg, #f8e8c4 0%, #bf801f 52%, #a96d18 100%);
+    background: linear-gradient(135deg, #E0B55A 0%, #D9A441 50%, #BF801F 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .text-gradient-cream-gold {
-    background: linear-gradient(135deg, #fdf8ee 0%, #f8e8c4 100%);
+    background: linear-gradient(135deg, #F8F3E8 0%, #E0B55A 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -83,15 +80,19 @@ body {
     border: 1px solid rgba(191, 128, 31, 0.18);
   }
 
-  .hero-overlay {
-    background: linear-gradient(180deg, rgba(2, 57, 54, 0.75) 0%, rgba(16, 72, 54, 0.86) 50%, rgba(1, 42, 40, 0.96) 100%);
-  }
-
   .shadow-gold {
     box-shadow: 0 10px 28px -10px rgba(191, 128, 31, 0.38);
   }
 
   .shadow-emerald {
-    box-shadow: 0 10px 34px -12px rgba(0, 24, 22, 0.7);
+    box-shadow: 0 10px 34px -12px rgba(0, 36, 30, 0.7);
+  }
+
+  .bg-forest-gradient {
+    background: linear-gradient(180deg, #003C32 0%, #023936 50%, #003C32 100%);
+  }
+
+  .bg-section-gradient {
+    background: linear-gradient(180deg, #023936 0%, #003C32 100%);
   }
 }
