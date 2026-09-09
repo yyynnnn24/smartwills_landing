@@ -1,23 +1,35 @@
-import { Calendar, MapPin, ArrowDown, Navigation } from 'lucide-react';
+import {
+  Calendar,
+  MapPin,
+  ArrowDown,
+  Navigation,
+  Clock,
+} from 'lucide-react';
 import { venueMapUrl } from '@/data/eventData';
 import logo from '@/assets/logo.png';
-import logo2 from '@/assets/logo2.png';
 
 export function Hero() {
   const scrollToProgramme = () => {
-    document.getElementById('programme')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('programme')?.scrollIntoView({
+      behavior: 'smooth',
+    });
   };
 
   return (
     <section className="relative min-h-[100svh] w-full overflow-hidden bg-[#F8F3E8]">
-      {/* Background gradient layers */}
+      {/* Background */}
       <div className="absolute inset-0 bg-[#F8F3E8]" />
 
-      {/* Decorative radial glow */}
+      {/* Decorative glow */}
       <div className="absolute inset-0 opacity-90">
-        <div className="absolute left-1/2 top-[10%] h-[640px] w-[640px] -translate-x-1/2 rounded-full bg-[#BF801F]/[0.08] blur-[130px]" />
-        <div className="absolute left-1/4 top-1/3 h-[420px] w-[420px] rounded-full bg-[#003C32]/[0.10] blur-[110px]" />
-        <div className="absolute right-1/4 bottom-1/4 h-[320px] w-[320px] rounded-full bg-[#D9A441]/[0.08] blur-[90px]" />
+        {/* Gold glow */}
+        <div className="absolute left-1/2 top-[10%] h-[640px] w-[640px] -translate-x-1/2 rounded-full bg-[#D9A441]/[0.10] blur-[130px]" />
+
+        {/* Red glow */}
+        <div className="absolute left-1/4 top-1/3 h-[420px] w-[420px] rounded-full bg-[#A52A2A]/[0.07] blur-[110px]" />
+
+        {/* Gold glow */}
+        <div className="absolute bottom-1/4 right-1/4 h-[320px] w-[320px] rounded-full bg-[#BF801F]/[0.08] blur-[90px]" />
       </div>
 
       {/* Grid texture */}
@@ -25,56 +37,62 @@ export function Hero() {
         className="absolute inset-0 opacity-[0.025]"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(0,60,50,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(0,60,50,0.4) 1px, transparent 1px)',
+            'linear-gradient(rgba(165,42,42,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(165,42,42,0.4) 1px, transparent 1px)',
           backgroundSize: '50px 50px',
         }}
       />
 
       {/* Gold corner accents */}
-      <div className="pointer-events-none absolute left-6 top-6 h-16 w-16 border-l border-t border-[#BF801F]/35 sm:left-10 sm:top-10 sm:h-20 sm:w-20" />
-      <div className="pointer-events-none absolute right-6 top-6 h-16 w-16 border-r border-t border-[#BF801F]/35 sm:right-10 sm:top-10 sm:h-20 sm:w-20" />
-      <div className="pointer-events-none absolute bottom-6 left-6 h-16 w-16 border-b border-l border-[#BF801F]/35 sm:bottom-10 sm:left-10 sm:h-20 sm:w-20" />
-      <div className="pointer-events-none absolute bottom-6 right-6 h-16 w-16 border-b border-r border-[#BF801F]/35 sm:bottom-10 sm:right-10 sm:h-20 sm:w-20" />
+      <div className="pointer-events-none absolute left-6 top-6 h-16 w-16 border-l border-t border-[#BF801F]/45 sm:left-10 sm:top-10 sm:h-20 sm:w-20" />
 
-            {/* Content */}
+      <div className="pointer-events-none absolute right-6 top-6 h-16 w-16 border-r border-t border-[#BF801F]/45 sm:right-10 sm:top-10 sm:h-20 sm:w-20" />
+
+      <div className="pointer-events-none absolute bottom-6 left-6 h-16 w-16 border-b border-l border-[#BF801F]/45 sm:bottom-10 sm:left-10 sm:h-20 sm:w-20" />
+
+      <div className="pointer-events-none absolute bottom-6 right-6 h-16 w-16 border-b border-r border-[#BF801F]/45 sm:bottom-10 sm:right-10 sm:h-20 sm:w-20" />
+
+      {/* Content */}
       <div className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-6 py-20 text-center sm:px-8">
-
         {/* Logo + Main Title */}
         <div
-          className="mb-7 flex items-center justify-center animate-fade-up opacity-0 "
+          className="mb-7 flex flex-col items-center justify-center animate-fade-up opacity-0"
           style={{ animationDelay: '0.4s' }}
         >
-          <div className="flex items-center justify-center">
           {/* Logo */}
           <img
             src={logo}
-            alt="SmartWills WasiatKu Logo"
-            className="h-[95px] w-[95px] shrink-0 object-contain sm:h-[115px] sm:w-[115px]"
+            alt="SmartWills Logo"
+            className=" h-[140px] w-[140px] object-contain sm:h-[170px] sm:w-[270px]"
           />
 
-          {/* Title */}
-          <h1 className="shrink-0 text-left font-serif text-4xl font-semibold leading-[1.05] text-[#003C32] sm:ml-[10px] sm:text-5xl md:text-6xl lg:text-7xl">
-            SMARTWILLS
-            <br />
-            <span className="text-gradient-gold">WASIATKU</span>
-          </h1>
-        </div>
-        </div>
-
-        {/* Official Launch */}
-        <div
-          className="mb-6 animate-fade-in opacity-0"
-          style={{ animationDelay: '0.55s' }}
+        {/* Title */}
+        <h1
+          className="flex flex-col items-center text-center font-bold leading-none text-[#D9A441]"
+          style={{ fontFamily: "'Brush Script MT', cursive" }}
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-[#BF801F]/40 bg-[#BF801F]/[0.06] px-5 py-2 text-[11px] font-semibold uppercase tracking-[0.25em] text-[#9A6417] sm:text-xs">
-            <span className="h-1.5 w-1.5 animate-pulse-soft rounded-full bg-[#BF801F]" />
-            Official Launch
+          {/* 10th */}
+          <span className="relative text-8xl sm:text-9xl">
+            10
+            <sup className="absolute -top-2 left-full ml-1 text-3xl leading-none sm:-top-3 sm:text-4xl">
+              th
+            </sup>
           </span>
+
+          {/* Anniversary */}
+          <span className="-translate-y-2 text-7xl sm:-mt-3 sm:text-8xl md:text-9xl">
+            Anniversary
+          </span>
+
+          {/* DINNER */}
+          <span className="mt-1 text-6xl sm:text-7xl md:text-8xl">
+            DINNER
+          </span>
+        </h1>
         </div>
 
         {/* Divider */}
         <div
-          className="my-5 h-px w-24 animate-fade-in bg-gradient-to-r from-transparent via-[#BF801F]/70 to-transparent opacity-0 sm:w-32"
+          className="my-5 h-px w-24 animate-fade-in bg-gradient-to-r from-transparent via-[#BF801F]/80 to-transparent opacity-0 sm:w-32"
           style={{ animationDelay: '0.7s' }}
         />
 
@@ -83,47 +101,53 @@ export function Hero() {
           className="mb-12 flex flex-col items-center animate-fade-up opacity-0"
           style={{ animationDelay: '0.8s' }}
         >
-          <p className="max-w-2xl text-base font-light leading-relaxed text-[#003C32]/80 sm:text-lg md:text-xl">
-            Memorandum of Understanding (MoU)
+          <p className="max-w-2xl text-base font-bold leading-relaxed text-[#000000]/80 sm:text-lg md:text-xl">
+            Celebrating a decade of
             <br />
-            Signing Ceremony
-            <br />
-            With
-            <br />
-            <span className="font-medium text-[#003C32]">
-              Palladium Trustee Berhad
+            <span className="font-bold text-[#000000]/80">
+              Trust, Legacy &amp; Impact
             </span>
           </p>
-
-          <img
-            src={logo2}
-            alt="Palladium Trustee Berhad Logo"
-            className="mt-1 h-[50px] w-auto object-contain sm:h-[100px]"
-          />
         </div>
 
-        {/* Event info pills */}
+        {/* Event info */}
         <div
           className="mb-8 flex flex-col items-center gap-3 animate-fade-up opacity-0 sm:flex-row sm:gap-4"
           style={{ animationDelay: '1.0s' }}
         >
-          <div className="inline-flex items-center gap-2.5 rounded-full border border-[#003C32]/15 bg-[#FFFFFF]/70 px-5 py-2.5 backdrop-blur-sm">
+          {/* Date */}
+          <div className="inline-flex items-center gap-2.5 rounded-full border border-[#BF801F]/30 bg-[#FFFFFF]/70 px-5 py-2.5 backdrop-blur-sm">
             <Calendar
-              className="h-4 w-4 text-[#003C32]"
+              className="h-4 w-4 text-[#A52A2A]"
               strokeWidth={1.5}
             />
-            <span className="text-sm font-medium text-[#003C32]/90">
+
+            <span className="text-sm font-medium text-[#000000]/90">
               12 September 2026
             </span>
           </div>
 
-          <div className="inline-flex items-center gap-2.5 rounded-full border border-[#003C32]/15 bg-[#FFFFFF]/70 px-5 py-2.5 backdrop-blur-sm">
-            <MapPin
-              className="h-4 w-4 text-[#003C32]"
+          {/* Time */}
+          <div className="inline-flex items-center gap-2.5 rounded-full border border-[#BF801F]/30 bg-[#FFFFFF]/70 px-5 py-2.5 backdrop-blur-sm">
+            <Clock
+              className="h-4 w-4 text-[#A52A2A]"
               strokeWidth={1.5}
             />
-            <span className="text-sm font-medium text-[#003C32]/90">
-              Tropicana Golf &amp; Country Resort, PJ
+
+            <span className="text-sm font-medium text-[#000000]/90">
+              6:00 PM - 10:00 PM
+            </span>
+          </div>
+
+          {/* Location */}
+          <div className="inline-flex items-center gap-2.5 rounded-full border border-[#BF801F]/30 bg-[#FFFFFF]/70 px-5 py-2.5 backdrop-blur-sm">
+            <MapPin
+              className="h-4 w-4 text-[#A52A2A]"
+              strokeWidth={1.5}
+            />
+
+            <span className="text-sm font-medium text-[#000000]/90">
+              Tropicana Grand Ballroom &amp; Banquet, PJ
             </span>
           </div>
         </div>
@@ -133,29 +157,35 @@ export function Hero() {
           className="flex flex-col items-center gap-3 animate-fade-up opacity-0 sm:flex-row sm:gap-4"
           style={{ animationDelay: '1.2s' }}
         >
+          {/* View Programme */}
           <button
             onClick={scrollToProgramme}
-            className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#BF801F] to-[#A96D18] px-7 py-3.5 text-sm font-semibold text-[#FFFFFF] shadow-gold transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:shadow-[#BF801F]/30 active:scale-[0.98]"
+            className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#A52A2A] to-[#8B1E1E] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#A52A2A]/20 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:shadow-[#A52A2A]/30 active:scale-[0.98]"
           >
             View Programme
+
             <ArrowDown
               className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5"
               strokeWidth={2}
             />
           </button>
 
+          {/* Get Directions */}
           <a
             href={venueMapUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-full border border-[#003C32]/30 bg-transparent px-7 py-3.5 text-sm font-semibold text-[#003C32] backdrop-blur-sm transition-all duration-300 hover:border-[#BF801F]/70 hover:bg-[#BF801F]/10 hover:text-[#9A6417] active:scale-[0.98]"
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-[#A52A2A]/35 bg-transparent px-7 py-3.5 text-sm font-semibold text-[#A52A2A] backdrop-blur-sm transition-all duration-300 hover:border-[#BF801F]/70 hover:bg-[#BF801F]/10 hover:text-[#8B1E1E] active:scale-[0.98]"
           >
-            <Navigation className="h-4 w-4" strokeWidth={2} />
+            <Navigation
+              className="h-4 w-4"
+              strokeWidth={2}
+            />
+
             Get Directions
           </a>
         </div>
       </div>
-        
     </section>
   );
 }

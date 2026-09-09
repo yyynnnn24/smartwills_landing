@@ -1,64 +1,57 @@
+import logo1 from '@/assets/logo1.png';
+import logo2 from '@/assets/logo2.png';
+import logo3 from '@/assets/logo3.jpg';
+import logo4 from '@/assets/logo4.jpg';
+
 export interface ProgrammeItem {
   time: string;
   title: string;
-  isMilestone?: boolean;
+  description?: string;
 }
 
 export const programmeData: ProgrammeItem[] = [
-  { time: '1:30 PM', title: 'Registration & Refreshment' },
-  { time: '2:00 PM', title: 'Welcome Speech' },
-  { time: '2:10 PM', title: 'SmartWills WasiatKu Overview & Growth Journey (2023–2026)' },
-  { time: '2:30 PM', title: 'Official Launch of SmartWills WasiatKu', isMilestone: true },
-  { time: '2:45 PM', title: 'Speech by Director of SmartWills WasiatKu' },
-  { time: '3:00 PM', title: 'MOU Signing with Palladium Trustee Bhd', isMilestone: true },
-  { time: '3:10 PM', title: 'Speech by MD of Palladium Trustee Bhd' },
-  { time: '3:15 PM', title: 'MOU Signing with Legal Advice & Shariah Lawyer', isMilestone: true },
-  { time: '3:30 PM', title: 'Speech by Shariah Lawyer Representative' },
-  { time: '3:35 PM', title: 'SmartWills WasiatKu Portal Demonstration' },
-  { time: '3:55 PM', title: 'Group Photography Session' },
-  { time: '4:00 PM', title: 'End of Ceremony' },
+  { time: '5:30 PM', title: 'Registration & Photo Booth' },
+  { time: '6:55 PM', title: 'Greeting Video by Lawyers' },
+  { time: '7:00 PM', title: 'Welcome Speech by MC Nick' },
+  { time: '7:05 PM', title: 'Dinner Served' },
+  { time: '7:35 PM', title: '10th Anniversary Appreciation & Souvenir Presentation (Part 1)' },
+  { time: '7:45 PM', title: 'Openining Lighting Show - 10-year Journey Video Presentation' },
+  { time: '7:50 PM', title: 'Welcome Speech by Founder - Dylan Ng' },
+  { time: '8:00 PM', title: 'Signing MOU For SmartWills Malaysia & Palladium Trustee Bhd', },
+  { time: '8:15 PM', title: 'Speech by Julia from Palladium Trustee Bhd' },
+  { time: '8:25 PM', title: 'SmartWills Anniversary MV',},
+  { time: '8:35 PM', title: '10th Anniversary Appreciation & Souvenir Presentation (Part 2)' },
+  { time: '8:45 PM', title: 'Cake Cutting Ceremony' },
+  { time: '9:00 PM', title: 'CSPM Launching Ceremony' },
+  { time: '9:10 PM', title: 'Presentation CSPM' },
+  { time: '9:30 PM', title: 'Closing by MC Nick',},
+  { time: '9:35 PM', title: 'Thank You Sponsorship & Closing with Networking' },
 ];
 
-export interface Speaker {
+export interface Partner {
   name: string;
-  initials: string;
+  logo: string;
 }
 
-export const speakersData: Speaker[] = [
-  { name: 'Cik Saliza Binti Juhari', initials: 'SJ' },
-  { name: 'En Norazmi Bin Samsuri', initials: 'NS' },
-  { name: 'Ms Julia', initials: 'JL' },
-  { name: 'Cik Mursyidatun Adilah', initials: 'MA' },
-];
-
-export interface Highlight {
-  title: string;
-  description: string;
-  icon: 'launch' | 'signing' | 'portal' | 'photo';
-}
-
-export const highlightsData: Highlight[] = [
+export const partnersData: Partner[] = [
   {
-    title: 'Official Launch',
-    description: 'The official inauguration of SmartWills WasiatKu, marking a new chapter in accessible estate planning.',
-    icon: 'launch',
+    name: 'SMILE28',
+    logo: logo1,
   },
   {
-    title: 'MoU Signing Ceremony',
-    description: 'Formal Memorandum of Understanding signings with esteemed partners and legal representatives.',
-    icon: 'signing',
+    name: 'ReGen Hospital',
+    logo: logo2,
   },
   {
-    title: 'Portal Demonstration',
-    description: 'A live walkthrough of the SmartWills WasiatKu portal and its digital estate-planning capabilities.',
-    icon: 'portal',
+    name: 'SMART INTELLIGENCE EDU',
+    logo: logo3,
   },
   {
-    title: 'Group Photography',
-    description: 'Commemorative group photography session to capture this milestone occasion.',
-    icon: 'photo',
+    name: 'ROYCEMD',
+    logo: logo4,
   },
 ];
+
 
 export const venueMapUrl =
   'https://www.google.com/maps/search/?api=1&query=Tropicana+Golf+%26+Country+Resort+Petaling+Jaya+Selangor';
