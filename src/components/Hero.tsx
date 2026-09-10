@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import { venueMapUrl } from '@/data/eventData';
 import logo from '@/assets/logo.png';
+import anniversaryTitle from '@/assets/hero.png';
 
 export function Hero() {
   const scrollToProgramme = () => {
@@ -62,32 +63,15 @@ export function Hero() {
           <img
             src={logo}
             alt="SmartWills Logo"
-           className="h-[180px] w-[260px] object-contain sm:h-[190px] sm:w-[300px]"
+           className="h-auto w-[280px] object-contain sm:w-[420px] md:w-[500px]"
           />
 
         {/* Title */}
-        <h1
-          className="flex flex-col items-center text-center font-bold leading-none text-[#D9A441]"
-          style={{ fontFamily: "'Brush Script MT', cursive" }}
-        >
-          {/* 10th */}
-          <span className="relative text-8xl sm:text-9xl">
-            10
-            <sup className="absolute -top-2 left-full ml-1 text-3xl leading-none sm:-top-3 sm:text-4xl">
-              th
-            </sup>
-          </span>
-
-          {/* Anniversary */}
-          <span className="-translate-y-2 text-7xl sm:-mt-3 sm:text-8xl md:text-9xl">
-            Anniversary
-          </span>
-
-          {/* DINNER */}
-          <span className="mt-1 text-6xl sm:text-7xl md:text-8xl">
-            DINNER
-          </span>
-        </h1>
+        <img
+          src={anniversaryTitle}
+          alt="10th Anniversary Celebration"
+          className="h-auto w-[500px] max-w-[95vw] object-contain sm:w-[750px] md:w-[900px] lg:w-[1000px]"
+        />
         </div>
 
         {/* Divider */}
