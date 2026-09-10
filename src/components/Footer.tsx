@@ -7,7 +7,7 @@ export function Footer() {
         <div className="flex flex-col items-center gap-6 text-center">
           {/* Copyright */}
           <p className="text-xs text-[#F8F3E8]/30">
-            &copy; 2026 SmartWills WasiatKu. All rights reserved.
+            &copy; 2026 SmartWills. All rights reserved.
           </p>
 
         </div>

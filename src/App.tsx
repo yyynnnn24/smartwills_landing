@@ -4,6 +4,7 @@ import { EventHighlights } from '@/components/EventHighlights';
 import { Venue } from '@/components/Venue';
 import { Footer } from '@/components/Footer';
 import { ExclusiveExperience } from './components/ExclusiveExperience';
+import { SmartWillsCTA } from './components/SmartWillsCTA';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <ExclusiveExperience />
       <ProgrammeTimeline />
       <Venue />
+      <SmartWillsCTA />
       <Footer />
     </div>
   );

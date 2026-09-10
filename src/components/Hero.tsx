@@ -60,12 +60,18 @@ export function Hero() {
           style={{ animationDelay: '0.4s' }}
         >
           {/* Logo */}
+         <a
+          href="https://smartwills.com.my/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block"
+        >
           <img
             src={logo}
             alt="SmartWills Logo"
-           className="h-auto w-[280px] object-contain sm:w-[420px] md:w-[500px]"
+            className="h-auto w-[280px] object-contain transition-opacity duration-300 hover:opacity-80 sm:w-[420px] md:w-[500px]"
           />
-
+        </a>
         {/* Title */}
         <img
           src={anniversaryTitle}
