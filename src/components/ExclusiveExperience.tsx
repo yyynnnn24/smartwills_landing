@@ -46,7 +46,7 @@ export function ExclusiveExperience() {
             <div className="group relative h-full overflow-hidden rounded-3xl border border-[#D9A441]/25 bg-white p-7 shadow-[0_15px_45px_rgba(0,60,50,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-[#D9A441]/60 hover:shadow-[0_20px_55px_rgba(0,60,50,0.10)] sm:p-9">
 
               {/* Number */}
-              <div className="absolute right-6 top-5 font-serif text-6xl font-bold text-[#D9A441]/10">
+              <div className="absolute right-6 top-5 font-serif text-6xl font-bold text-[#D9A441]/80">
                 01
               </div>
 
@@ -78,7 +78,7 @@ export function ExclusiveExperience() {
             <div className="group relative h-full overflow-hidden rounded-3xl border border-[#D9A441]/25 bg-white p-7 shadow-[0_15px_45px_rgba(0,60,50,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-[#D9A441]/60 hover:shadow-[0_20px_55px_rgba(0,60,50,0.10)] sm:p-9">
 
               {/* Number */}
-              <div className="absolute right-6 top-5 font-serif text-6xl font-bold text-[#D9A441]/10">
+              <div className="absolute right-6 top-5 font-serif text-6xl font-bold text-[#D9A441]/80">
                 02
               </div>
 
