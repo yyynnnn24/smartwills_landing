@@ -10,10 +10,9 @@ export interface ProgrammeItem {
 }
 
 export const programmeData: ProgrammeItem[] = [
-  { time: '5:30-6:45 PM', title: 'Registration & Photo Booth' },
+  { time: '5:30 - 6:45 PM', title: 'Registration & Photo Booth' },
   { time: '6:55 PM', title: 'Play Video (Greeting Video by Lawyers)' },
-  { time: '6:55 PM', title: 'Welcome Music - Let\'s Welcome Our MC of Tonite' }, 
-  { time: '7:00 PM', title: 'Welcome Speech by MC Nick' },
+  { time: '7:00 PM', title: 'Welcome Music - Let\'s Welcome Our MC of Tonite\nWelcome Speech by MC Nick Sim' },
   { time: '7:05 PM', title: 'Dinner Served' },
   { time: '7:35 PM', title: '10th Anniversary Appreciation & Souvenir Presentation (Part 1)' },
   { time: '7:45 PM', title: 'Openining Lighting Show - 10-year Journey Video Presentation' },

@@ -1,6 +1,7 @@
 import { MapPin, Navigation, Calendar } from 'lucide-react';
 import { Reveal } from '@/components/Reveal';
 import { venueMapUrl } from '@/data/eventData';
+import venueVideo from '@/assets/video.mp4';
 
 export function Venue() {
   return (
@@ -39,50 +40,24 @@ export function Venue() {
         <Reveal delay={100}>
           <div className="overflow-hidden rounded-3xl border border-[#D9A441]/25 bg-white shadow-[0_20px_60px_rgba(0,60,50,0.10)]">
 
-            {/* Map-style visual */}
-            <div className="relative h-48 overflow-hidden sm:h-56">
-
-              {/* Map Background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#E8E0CC] via-[#D9D0BA] to-[#C8C0AA]" />
-              {/* Map Grid */}
-              <div
-                className="absolute inset-0 opacity-25"
-                style={{
-                  backgroundImage:
-                    'linear-gradient(rgba(217,164,65,0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(217,164,65,0.12) 1px, transparent 1px)',
-                  backgroundSize: '30px 30px',
-                }}
+            {/* Venue Video */}
+            <div className="relative mx-auto aspect-[9/16] w-full max-w-[360px] overflow-hidden bg-[#E8E0CC] sm:max-w-[400px]">
+              <video
+                src={venueVideo}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="h-full w-full object-cover"
               />
 
-              {/* Roads */}
-              <div className="absolute left-0 top-1/3 h-0.5 w-full -rotate-12 bg-white/50" />
+              {/* Soft overlay */}
+              <div className="absolute inset-0 bg-black/10" />
 
-              <div className="absolute left-1/4 top-0 h-full w-0.5 rotate-6 bg-white/50" />
-
-              <div className="absolute right-0 top-2/3 h-0.5 w-full rotate-3 bg-white/40" />
-
-              <div className="absolute left-0 top-1/2 h-0.5 w-3/4 rotate-6 bg-[#A96D18]/25" />
-
-              {/* Location Pin */}
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                <div className="relative flex flex-col items-center">
-
-                  {/* Glow */}
-                  <div className="absolute -inset-4 animate-pulse rounded-full bg-[#D9A441]/20 blur-md" />
-
-                  {/* Pin Circle */}
-                  <div className="relative flex h-14 w-14 items-center justify-center rounded-full border-2 border-[#D9A441] bg-[#8F1D1D] shadow-[0_0_25px_rgba(217,164,65,0.25)]">
-                    <MapPin
-                      className="h-6 w-6 text-[#D9A441]"
-                      strokeWidth={1.5}
-                    />
-                  </div>
-
-                  {/* Pin Tail */}
-                  <div className="mt-1 h-2 w-1 rounded-full bg-[#D9A441]/50" />
-                </div>
+              {/* Venue Name Overlay */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full border border-white/30 bg-black/30 px-4 py-1.5 text-xs font-medium text-white backdrop-blur-sm sm:text-sm">
+                Tropicana Golf &amp; Country Resort
               </div>
-
             </div>
 
             {/* Venue Details */}
@@ -107,6 +82,11 @@ export function Venue() {
                 <h3 className="font-serif text-2xl font-bold leading-tight text-[#000000]/80 sm:text-3xl">
                   Tropicana Golf &amp; Country Resort
                 </h3>
+
+                {/* Ballroom */}
+                <p className="mt-2 text-sm font-medium text-[#8F1D1D]">
+                  Tropicana Grand Ballroom &amp; Banquet
+                </p>
 
                 {/* Location */}
                 <p className="mt-3 flex items-center justify-center gap-1.5 text-sm text-[#000000]/60 md:justify-start">
@@ -142,3 +122,4 @@ export function Venue() {
     </section>
   );
 }
+

@@ -14,9 +14,9 @@ function ProgrammeEntry({
       <div className="group relative flex gap-4 sm:gap-6">
 
         {/* Time */}
-        <div className="flex w-20 flex-shrink-0 flex-col items-end sm:w-28">
+        <div className="flex w-24 flex-shrink-0 flex-col items-end sm:w-28">
           <div className="rounded-lg px-2.5 py-1 text-right transition-colors duration-300">
-            <span className="font-sans text-xs font-semibold tabular-nums text-[#8F1D1D]/75 sm:text-sm">
+            <span className="whitespace-nowrap font-sans text-xs font-semibold tabular-nums text-[#8F1D1D]/75 sm:text-sm">
               {item.time}
             </span>
           </div>
@@ -35,7 +35,7 @@ function ProgrammeEntry({
 
         {/* Programme */}
         <div className="flex-1 pb-8">
-          <p className="text-sm font-medium leading-relaxed text-[#000000]/80 transition-colors duration-300 group-hover:text-[#8F1D1D] sm:text-base">
+          <p className="whitespace-pre-line text-sm font-medium leading-relaxed text-[#000000]/80 transition-colors duration-300 group-hover:text-[#8F1D1D] sm:text-base">
             {item.title}
           </p>
           

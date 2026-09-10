@@ -62,7 +62,7 @@ export function Hero() {
           <img
             src={logo}
             alt="SmartWills Logo"
-            className=" h-[140px] w-[140px] object-contain sm:h-[170px] sm:w-[270px]"
+           className="h-[180px] w-[260px] object-contain sm:h-[190px] sm:w-[300px]"
           />
 
         {/* Title */}
