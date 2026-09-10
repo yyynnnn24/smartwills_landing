@@ -9,7 +9,7 @@ html {
 
 body {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-  background: #003C32;
+  background: #F8F3E8;
   color: #F8F3E8;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,7 +18,7 @@ body {
 
 ::selection {
   background-color: #BF801F;
-  color: #003C32;
+  color: #F8F3E8;
 }
 
 ::-webkit-scrollbar {
@@ -26,11 +26,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #003C32;
+  background: #F8F3E8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #104836;
+  background: #F8F3E8;
   border-radius: 3px;
 }
 
