@@ -3,7 +3,7 @@ import { Reveal } from '@/components/Reveal';
 
 export function SmartWillsCTA() {
   return (
-    <section className="relative w-full overflow-hidden bg-[#F8F3E8] py-16 sm:py-20">
+    <section className="relative w-full overflow-hidden bg-[#8F1D1D] py-16 sm:py-20">
       {/* Decorative Glow */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/2 top-1/2 h-[400px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#D9A441]/[0.08] blur-[120px]" />
@@ -16,12 +16,12 @@ export function SmartWillsCTA() {
       <div className="relative mx-auto max-w-3xl px-6 text-center sm:px-8">
         <Reveal>
           {/* Small Label */}
-          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#D9A441]">
+          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#F8F3E8]/80">
             Discover SmartWills
           </span>
 
           {/* Heading */}
-          <h2 className="mt-4 font-serif text-3xl font-bold text-[#D9A441] sm:text-4xl md:text-5xl">
+          <h2 className="mt-4 font-serif text-3xl font-bold text-[#F8F3E8] sm:text-4xl md:text-5xl">
             Learn More About SmartWills
           </h2>
 
@@ -34,7 +34,7 @@ export function SmartWillsCTA() {
               href="https://smartwills.com.my/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2.5 rounded-full bg-[#D9A441] px-7 py-3.5 text-sm font-semibold text-[#00000] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#BF801F] hover:shadow-xl"
+              className="group inline-flex items-center gap-2.5 rounded-full bg-[#D9A441] px-7 py-3.5 text-sm font-semibold text-[#F8F3E8] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#BF801F] hover:shadow-xl"
             >
               Visit Our Website
 
