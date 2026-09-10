@@ -44,11 +44,11 @@ export function EventHighlights() {
         {/* Heading */}
         <Reveal className="mb-10 text-center">
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#8F1D1D]">
-            In Collaboration With
+            With Gratitude To Our Valued Sponsors
           </span>
 
           <h2 className="mt-4 font-serif text-3xl font-bold text-[#D9A441] sm:text-4xl md:text-5xl">
-            Our Partners
+            Thank you for your generous support and for being part of our 10th Anniversary Celebration!
           </h2>
 
           <div className="mx-auto mt-6 h-px w-16 bg-gradient-to-r from-transparent via-[#D9A441]/60 to-transparent" />
