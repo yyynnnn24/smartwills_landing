@@ -35,9 +35,27 @@ function ProgrammeEntry({
 
         {/* Programme */}
         <div className="flex-1 pb-8">
+          {index === 1 ? (
+          <div className="text-sm font-medium leading-relaxed text-[#000000]/80 transition-colors duration-300 group-hover:text-[#8F1D1D] sm:text-base">
+            <div>Play Video</div>
+
+            <div className="mt-1 flex flex-wrap items-center gap-2 text-xs sm:text-sm">
+              <span>Greeting Videos from Our Lawyers & Core Team</span>
+
+              <span className="flex items-center gap-1.5">
+                <img src="https://flagcdn.com/w40/sg.png" alt="Singapore" className="h-4 w-6 object-cover" />
+                <img src="https://flagcdn.com/w40/hk.png" alt="Hong Kong" className="h-4 w-6 object-cover" />
+                <img src="https://flagcdn.com/w40/th.png" alt="Thailand" className="h-4 w-6 object-cover" />
+                <img src="https://flagcdn.com/w40/ph.png" alt="Philippines" className="h-4 w-6 object-cover" />
+                <img src="https://flagcdn.com/w40/cn.png" alt="China" className="h-4 w-6 object-cover" />
+              </span>
+            </div>
+          </div>
+        ) : (
           <p className="whitespace-pre-line text-sm font-medium leading-relaxed text-[#000000]/80 transition-colors duration-300 group-hover:text-[#8F1D1D] sm:text-base">
             {item.title}
           </p>
+        )}
           
           {item.description && (
           <p className="mt-1.5 flex items-center gap-1.5 text-xs text-[#003C32]/70 sm:text-sm">
