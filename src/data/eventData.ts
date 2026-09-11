@@ -12,7 +12,7 @@ export interface ProgrammeItem {
 
 export const programmeData: ProgrammeItem[] = [
   { time: '5:30 - 6:45 PM', title: 'Registration & Photo Booth' },
-  { time: '6:55 PM', title: 'Play Video (Greeting Video by Lawyers)' },
+  { time: '6:55 PM', title: 'Play Video (Greeting Videos from Our Lawyers & Core Team Singapore • Hong Kong • Thailand • Philippines • China)' },
   { time: '7:00 PM', title: 'Welcome Music - Let\'s Welcome Our MC of Tonite\nWelcome Speech by MC Nick Sim' },
   { time: '7:05 PM', title: 'Dinner Served' },
   { time: '7:30 PM', title: 'Play Videos (Wasiatku Launching Video)' },
