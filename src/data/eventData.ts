@@ -25,7 +25,6 @@ export const programmeData: ProgrammeItem[] = [
   { time: '8:35 PM', title: '10th Anniversary Appreciation & Souvenir Presentation (Part 2)' },
   { time: '8:45 PM', title: 'CSPM Launching Ceremony' },
   { time: '9:00 PM', title: 'Presentation CSPM' },
-  { time: '9:20 PM', title: 'Nick on stage for closing',},
   { time: '9:25 PM', title: 'Thank You Sponsorship & Closing with Networking' },
 ];
 
