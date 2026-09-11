@@ -12,10 +12,10 @@ export interface ProgrammeItem {
 
 export const programmeData: ProgrammeItem[] = [
   { time: '5:30 - 6:45 PM', title: 'Registration & Photo Booth' },
-  { time: '6:55 PM', title: 'Play Video (Greeting Videos from Our Lawyers & Core Team Singapore • Hong Kong • Thailand • Philippines • China)' },
+  { time: '6:55 PM', title: 'Greeting Videos from Our Lawyers & Core Team Singapore • Hong Kong • Thailand • Philippines • China' },
   { time: '7:00 PM', title: 'Opening Remarks by the Emcee' },
   { time: '7:05 PM', title: 'Dinner Served' },
-  { time: '7:30 PM', title: 'Play Videos (A look back: WasiatKu Launching Video)' },
+  { time: '7:30 PM', title: 'A look back: WasiatKu Launching Video' },
   { time: '7:35 PM', title: '10 Years Journey Video Presentation' },
   { time: '7:45 PM', title: 'Opening Lighting Show - 10-year Journey Video Presentation' },
   { time: '7:50 PM', title: 'Welcome Speech by Founder - Dylan Ng' },
