@@ -10,10 +10,11 @@ function PartnerCard({
 }) {
   return (
     <Reveal delay={index * 80}>
-    <div className="group relative flex h-[150px] items-center justify-center overflow-hidden rounded-2xl border border-[#D9A441]/25 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#D9A441]/60 hover:shadow-lg sm:h-[220px] sm:p-6">    <img
+    <div className="group relative flex h-[150px] items-center justify-center overflow-hidden rounded-2xl border border-[#D9A441]/25 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#D9A441]/60 hover:shadow-lg sm:h-[220px] sm:p-6">    
+    <img
           src={partner.logo}
           alt={partner.name}
-          className="h-auto max-h-[90px] w-auto max-w-[130px] object-contain transition-transform duration-300 group-hover:scale-105 sm:max-h-[150px] sm:max-w-[280px]"
+          className="h-auto max-h-[120px] w-auto max-w-[200px] object-contain transition-transform duration-300 group-hover:scale-105 sm:max-h-[150px] sm:max-w-[280px]"
         />
 
         <div className="absolute bottom-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-[#D9A441]/0 to-transparent transition-all duration-500 group-hover:via-[#D9A441]/60" />
